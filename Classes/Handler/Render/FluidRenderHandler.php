@@ -31,9 +31,29 @@ class FluidRenderHandler implements RenderHandlerInterface
         /** @var StandaloneView */
         $view = GeneralUtility::makeInstance(StandaloneView::class);
         $path = GeneralUtility::getFileAbsFileName($templateConfiguration->getPlace()->getEntryPoint());
-        $view->setTemplatePathAndFilename($templateConfiguration->getTemplateFileName());
+        $options = $templateConfiguration->getOptions();
 
-        return $view->render();
+        /** @TODO Check if template file otherwise bad error messages will happen */
+        $view->setTemplatePathAndFilename(GeneralUtility::getFileAbsFileName($templateConfiguration->getTemplateFileName()));
+
+        if (isset($options['layoutRootPaths'])) {
+            $view->setLayoutRootPaths($options['layoutRootPaths']);
+        }
+        if (isset($options['partialRootPaths'])) {
+            $view->setPartialRootPaths($options['partialRootPaths']);
+        }
+
+        /** @TODO process remapping instructions before */
+        $view->assignMultiple($processedValues);
+        $view->assign('data', $row);
+
+        try {
+            return $view->render() ?? '';
+        } catch (\Exception $e) {
+            /** @TODO Error message */
+            return $e->getMessage();
+        }
+        return '';
     }
 
     /**
