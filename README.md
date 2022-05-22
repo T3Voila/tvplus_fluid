@@ -1,6 +1,5 @@
-# tvplus_fluid
-TemplaVoilà! Fluid Renderer
+# TV+ Fluid Renderer
 
-![ICON](/Resources/Public/Icons/Extension.svg)
+<img alt="ICON" align="right" width="256" height="256" src="/Resources/Public/Icons/Extension.svg">
 
-Using TemplaVoilà! Plus 8 together with TYPO3 Fluid templates.
+This is a TYPO3 Extension which extends your TemplaVoilà! Plus installation with support for the modern TYPO3.Fluid template engine as renderer of your content.
