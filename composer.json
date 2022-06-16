@@ -5,24 +5,23 @@
     "keywords": [
         "TYPO3",
         "extension",
+        "TVplus",
         "TemplaVoila",
-        "TemplaVoilaPlus",
-        "theme"
+        "TemplaVoilaPlus"
     ],
     "homepage": "https://templavoila.plus/",
     "license": ["GPL-2.0+"],
     "authors": [
         {
             "name": "Alexander Opitz",
-            "email": "opitz@extrameile-gehen.de",
-            "homepage": "http://www.extrameile-gehen.de",
+            "email": "opitz.alexander@googlemail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "typo3/cms-core": "^8.7.0 || ^9.5.0 || ^10.4.0 || ^11.5.0",
         "typo3/cms-fluid": "^8.7.0 || ^9.5.0 || ^10.4.0 || ^11.5.0",
-        "templavoilaplus/templavoilaplus": "^8.0.3",
+        "templavoilaplus/templavoilaplus": "^8.0.4",
         "php": "^7.2"
     },
     "autoload": {
