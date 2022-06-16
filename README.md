@@ -5,4 +5,22 @@
 
 <img alt="ICON" align="right" width="256" height="256" src="/Resources/Public/Icons/Extension.svg">
 
-This is a TYPO3 Extension which extends your TemplaVoilà! Plus installation with support for the modern TYPO3.Fluid template engine as renderer of your content.
+This is a [TYPO3](https://typo3.org) Extension which extends your TemplaVoilà! Plus installation with support for the modern TYPO3.Fluid template engine as renderer for frontend output.
+
+Take a look into the [UIkit theme](https://github.com/T3Voila/t3voila_uikit) to learn how to use the TV+ Fluid Renderer inside your theme extension.
+
+## Installation
+
+The extension supports following TYPO3 LTS version:
+* TYPO3 v8 LTS
+* TYPO3 v9 LTS
+* TYPO3 v10 LTS
+* TYPO3 v11 LTS
+
+On composer based TYPO3 instances install the extension with the following command:
+
+```bash
+composer require t3voila/tvplus-fluid
+```
+
+On TER based TYPO3 instaneces go to the extension modul and search for tvplus_fluid and use the install button.
