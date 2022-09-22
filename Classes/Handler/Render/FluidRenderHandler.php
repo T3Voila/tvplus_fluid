@@ -43,6 +43,15 @@ class FluidRenderHandler implements RenderHandlerInterface
             $view->setPartialRootPaths($options['partialRootPaths']);
         }
 
+        $parentRec = [];
+        foreach ($GLOBALS['TSFE']->register as $key => $value) {
+            if (strpos($key, 'tx_templavoilaplus_pi1.parentRec.') === 0) {
+                $parentRec[substr($key, strlen('tx_templavoilaplus_pi1.parentRec.'))] = $value;
+            }
+        }
+        $view->assign('parentRec', $parentRec);
+        $view->assign('current_field', $GLOBALS['TSFE']->register['tx_templavoilaplus_pi1.current_field'] ?? null);
+
         /** @TODO process remapping instructions before */
         $view->assignMultiple($processedValues);
         $view->assign('data', $row);
