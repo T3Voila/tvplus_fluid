@@ -1,40 +1,42 @@
 {
-    "name": "t3voila/tvplus-fluid",
-    "type": "typo3-cms-extension",
-    "description": "Fluid renderer for TemplaVoilà! Plus",
-    "keywords": [
-        "TYPO3",
-        "extension",
-        "TVplus",
-        "TemplaVoila",
-        "TemplaVoilaPlus"
-    ],
-    "homepage": "https://templavoila.plus/",
-    "license": ["GPL-2.0+"],
-    "authors": [
-        {
-            "name": "Alexander Opitz",
-            "email": "opitz.alexander@googlemail.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "typo3/cms-core": "^8.7.0 || ^9.5.0 || ^10.4.0 || ^11.5.0",
-        "typo3/cms-fluid": "^8.7.0 || ^9.5.0 || ^10.4.0 || ^11.5.0",
-        "templavoilaplus/templavoilaplus": "^8.0.4 || *@dev",
-        "php": "^7.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "T3voila\\TvplusFluid\\": "Classes/"
-        }
-    },
-    "replace": {
-        "typo3-ter/tvplus_fluid": "self.version"
-    },
-    "extra": {
-        "typo3/cms": {
-            "extension-key": "tvplus_fluid"
-        }
-    }
+	"name": "t3voila/tvplus-fluid",
+	"type": "typo3-cms-extension",
+	"description": "Fluid renderer for TemplaVoilà! Plus",
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"TVplus",
+		"TemplaVoila",
+		"TemplaVoilaPlus"
+	],
+	"homepage": "https://templavoila.plus/",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"authors": [
+		{
+			"name": "Alexander Opitz",
+			"email": "opitz.alexander@googlemail.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=7.2.0 <8.1.99",
+		"typo3/cms-core": "^8.7.0 || ^9.5.0 || ^10.4.0 || ^11.5.0",
+		"typo3/cms-fluid": "^8.7.0 || ^9.5.0 || ^10.4.0 || ^11.5.0",
+		"templavoilaplus/templavoilaplus": "^8.1.0 || *@dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"T3voila\\TvplusFluid\\": "Classes/"
+		}
+	},
+	"replace": {
+		"typo3-ter/tvplus_fluid": "self.version"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "tvplus_fluid"
+		}
+	}
 }

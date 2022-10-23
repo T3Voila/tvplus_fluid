@@ -23,4 +23,8 @@ On composer based TYPO3 instances install the extension with the following comma
 composer require t3voila/tvplus-fluid
 ```
 
-On TER based TYPO3 instaneces go to the extension modul and search for tvplus_fluid and use the install button.
+On TER based TYPO3 instances go to the extension modul and search for tvplus_fluid and use the install button.
+
+## Future of this extension
+
+This extension will later be merged into "TemplaVoilà! Plus v10" as primary renderer. So you can use this extension already to switch from XPath rendering to Fluid rendering.
