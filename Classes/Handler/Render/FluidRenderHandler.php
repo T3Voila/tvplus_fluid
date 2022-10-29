@@ -44,9 +44,11 @@ class FluidRenderHandler implements RenderHandlerInterface
         }
 
         $parentRec = [];
-        foreach ($GLOBALS['TSFE']->register as $key => $value) {
-            if (strpos($key, 'tx_templavoilaplus_pi1.parentRec.') === 0) {
-                $parentRec[substr($key, strlen('tx_templavoilaplus_pi1.parentRec.'))] = $value;
+        if (isset($GLOBALS['TSFE']->register) && is_array($GLOBALS['TSFE']->register)) {
+            foreach ($GLOBALS['TSFE']->register as $key => $value) {
+                if (strpos($key, 'tx_templavoilaplus_pi1.parentRec.') === 0) {
+                    $parentRec[substr($key, strlen('tx_templavoilaplus_pi1.parentRec.'))] = $value;
+                }
             }
         }
         $view->assign('parentRec', $parentRec);
