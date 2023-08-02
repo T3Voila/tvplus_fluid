@@ -1,17 +1,16 @@
 {
 	"name": "t3voila/tvplus-fluid",
-	"type": "typo3-cms-extension",
 	"description": "Fluid renderer for TemplaVoilà! Plus",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"type": "typo3-cms-extension",
 	"keywords": [
 		"TYPO3",
 		"extension",
 		"TVplus",
 		"TemplaVoila",
 		"TemplaVoilaPlus"
-	],
-	"homepage": "https://templavoila.plus/",
-	"license": [
-		"GPL-2.0-or-later"
 	],
 	"authors": [
 		{
@@ -20,19 +19,20 @@
 			"role": "Developer"
 		}
 	],
+	"homepage": "https://templavoila.plus/",
 	"require": {
 		"php": ">=7.4.0 <8.1.99",
+		"templavoilaplus/templavoilaplus": "*@dev || ^8.1.0",
 		"typo3/cms-core": "^11.5.0 || ^12.4.0",
-		"typo3/cms-fluid": "^11.5.0 || ^12.4.0",
-		"templavoilaplus/templavoilaplus": "^8.1.0 || *@dev"
+		"typo3/cms-fluid": "^11.5.0 || ^12.4.0"
+	},
+	"replace": {
+		"typo3-ter/tvplus_fluid": "self.version"
 	},
 	"autoload": {
 		"psr-4": {
 			"T3voila\\TvplusFluid\\": "Classes/"
 		}
-	},
-	"replace": {
-		"typo3-ter/tvplus_fluid": "self.version"
 	},
 	"extra": {
 		"typo3/cms": {
