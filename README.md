@@ -11,11 +11,12 @@ Take a look into the [UIkit theme](https://github.com/T3Voila/t3voila_uikit) to 
 
 ## Installation
 
-The extension supports following TYPO3 LTS version:
+The extension supports following TYPO3 LTS versions:
 * TYPO3 v8 LTS
 * TYPO3 v9 LTS
 * TYPO3 v10 LTS
 * TYPO3 v11 LTS
+* TYPO3 v12 LTS
 
 On composer based TYPO3 instances install the extension with the following command:
 
