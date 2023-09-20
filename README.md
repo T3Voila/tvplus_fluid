@@ -9,6 +9,10 @@ This is a [TYPO3](https://typo3.org) Extension which extends your TemplaVoilà! 
 
 Take a look into the [UIkit theme](https://github.com/T3Voila/t3voila_uikit) to learn how to use the TV+ Fluid Renderer inside your theme extension.
 
+## HINT!
+
+This extension is abandoned as the functionality was integrated into TemplaVoilà! Plus, so this extension isn't needed anymore.
+
 ## Installation
 
 The extension supports following TYPO3 LTS version:
